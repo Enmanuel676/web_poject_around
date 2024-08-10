@@ -1,0 +1,97 @@
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 282px 16px 282px 16px 282px;
+  grid-template-columns: repeat(3, 282px);
+  -ms-grid-rows: 361px 16px 361px 16px 361px;
+  grid-template-rows: repeat(3, 361px);
+  -webkit-column-gap: 16px;
+  -moz-column-gap: 16px;
+  column-gap: 16px;
+  row-gap: 16px;
+  height: 743px;
+  margin-top: 50px;
+}
+.grid__card {
+  background-color: #fff;
+  border-radius: 11px;
+}
+.grid__image {
+  width: 100%;
+  height: 282px;
+  margin: 0;
+}
+.grid__name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-top: 25px;
+  margin-bottom: 31px;
+  margin-left: 21px;
+  margin-right: 15px;
+  font-size: 24px;
+  line-height: 29.05px;
+  font-weight: 900;
+  color: #000;
+  width: 89.5%;
+  height: 25px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.grid__name_louise {
+  height: 30px;
+}
+.grid__name_braies {
+  height: 30px;
+}
+
+.grid__like {
+  height: 19px;
+  width: 21px;
+  margin-top: 5px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  background-image: url(../images/heart.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.grid__like:hover {
+  background-image: url(../images/heart-over.png);
+}
+.grid__like_active {
+  height: 19px;
+  width: 21px;
+  margin-top: 5px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  background-image: url(../images/heart-active.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+@media screen and (max-width: 425px) {
+  .grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: 2310px;
+    margin: auto;
+    margin-top: 36px;
+    row-gap: 20px;
+    width: 280px;
+  }
+}
